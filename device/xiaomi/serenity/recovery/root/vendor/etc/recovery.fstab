@@ -1,0 +1,6 @@
+/system         ext4    system                                     wait,logical,first_stage_mount
+/vendor         ext4    vendor                                     wait,logical,first_stage_mount
+/product        ext4    product                                    wait,logical,first_stage_mount
+/data           f2fs    /dev/block/by-name/userdata                wait,check,formattable
+/boot           emmc    /dev/block/by-name/boot                    wait,slotselect
+/misc           emmc    /dev/block/by-name/misc                    wait

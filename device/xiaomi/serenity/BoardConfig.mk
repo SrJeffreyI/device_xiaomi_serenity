@@ -1,0 +1,18 @@
+DEVICE_PATH := device/xiaomi/serenity
+
+# Architecture
+TARGET_ARCH := arm64
+TARGET_ARCH_VARIANT := armv8-a
+TARGET_CPU_ABI := arm64-v8a
+TARGET_CPU_VARIANT := generic
+
+# Kernel - Baseado no Aurora (Android 15)
+BOARD_KERNEL_PAGESIZE := 4096
+BOARD_BOOT_HEADER_VERSION := 4
+BOARD_MKBOOTIMG_ARGS += --header_version $(BOARD_BOOT_HEADER_VERSION)
+BOARD_KERNEL_IMAGE_NAME := Image
+TARGET_KERNEL_ARCH := arm64
+
+# Partitions - Dynamic Partitions
+BOARD_FLASH_BLOCK_SIZE := 262144
+BOARD_USES_METADATA_PARTITION := true
