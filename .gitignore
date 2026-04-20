@@ -1,0 +1,34 @@
+# Build files
+*.o
+*.ko
+*.so
+*.so.*
+*.a
+*.out
+*.elf
+*.swp
+*.swo
+*~
+
+# Build directories
+out/
+build/
+dist/
+.repo/
+.git/
+
+# IDE
+.vscode/
+.idea/
+*.iml
+*.iws
+
+# OS
+.DS_Store
+Thumbs.db
+.directory
+
+# Temporary files
+*.tmp
+*.log
+*.bak
